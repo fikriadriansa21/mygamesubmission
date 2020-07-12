@@ -10,9 +10,15 @@ import UIKit
 
 class GenreCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var imageGenre: UIImageView!
+    @IBOutlet weak var labelGenreTitle: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    static func registerGenreCollectionCell()->UINib{
+        return UINib(nibName: "GenreCollectionViewCell", bundle: nil)
     }
 
 }

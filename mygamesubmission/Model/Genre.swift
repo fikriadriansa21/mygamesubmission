@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct GenreResult: Codable{
+struct ResponseGenre: Codable{
     var results : [Genres]
     
     enum CodingKeys: String, CodingKey {
@@ -32,7 +32,7 @@ struct GenreResult: Codable{
 struct Genres: Codable {
     let id: Int?
     let name: String?
-    let image: String?
+    let image: URL?
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -45,7 +45,7 @@ struct Genres: Codable {
 
         id = try container.decode(Int.self, forKey: .id)
         name = try container.decode(String.self, forKey: .name)
-        image = try container.decode(String.self, forKey: .image)
+        image = try container.decode(URL.self, forKey: .image)
     }
 
     func encode(to encoder: Encoder) throws {

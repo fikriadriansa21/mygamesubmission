@@ -10,30 +10,45 @@ import UIKit
 
 class DetailGenreViewController: UIViewController {
     
+    @IBOutlet weak var labelDescriptionGenre: UILabel!
+    @IBOutlet weak var labelGameCount: UILabel!
+    @IBOutlet weak var labelTitleGenre: UILabel!
+    @IBOutlet weak var imageBackgroundGenre: UIImageView!
+    
     var genreSelected: Genres?
+    var genreDetail: GenreDetail?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-
-        self.tabBarController?.tabBar.isHidden = true
+        loadDataDetailGenre()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-//        self.tabBarController?.tabBar.isHidden = true
-//        self.hidesBottomBarWhenPushed = true
+    @objc private func loadDataDetailGenre(){
+        NetworkManager.getGenreDetail(id: (genreSelected?.id)!, completion: {genreDetail in
+            if let genreDetail = genreDetail{
+                DispatchQueue.main.async {
+                    self.labelTitleGenre.text = genreDetail.name
+                    self.labelGameCount.text = String(genreDetail.games_count)
+                    self.setImage(from: genreDetail.image!)
+                    self.labelDescriptionGenre.text = genreDetail.description
+                }
+            }
+        })
     }
+    
 
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension DetailGenreViewController{
+    func setImage(from url: URL) {
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
+            if let data = data {
+                let image = UIImage(data: data)
+                DispatchQueue.main.async {
+                    self.imageBackgroundGenre.image = image
+                }
+            }
+        }.resume()
     }
-    */
-
 }

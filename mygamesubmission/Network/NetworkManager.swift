@@ -14,6 +14,7 @@ class NetworkManager{
     static let listGenre = "/genres?page_size="
     static let detailGame = "/games/"
     static let screenshot = "/screenshots"
+    static let detailGenre = "/genres/"
     
     
     static func getListGenre(page_size: String, completion: @escaping([Genres]?) -> Void){
@@ -23,6 +24,23 @@ class NetworkManager{
                     let decoder = JSONDecoder()
                     let responseGenre = try decoder.decode(ResponseGenre.self, from: data)
                     completion(responseGenre.results)
+                } catch  {
+                    print("Decode proccess error:  \(error.localizedDescription)")
+                }
+                
+            }else{
+                print("Error : \(String(describing: error))")
+            }
+        }).resume()
+    }
+    
+    static func getGenreDetail(id: Int, completion: @escaping(GenreDetail?) -> Void){
+        URLSession.shared.dataTask(with: URL(string: "\(baseURL)\(detailGenre)\(id)")!, completionHandler: {(data,response,error)  in
+            if let data = data{
+                do {
+                    let decoder = JSONDecoder()
+                    let responseGenreDetail = try decoder.decode(GenreDetail.self, from: data)
+                    completion(responseGenreDetail)
                 } catch  {
                     print("Decode proccess error:  \(error.localizedDescription)")
                 }
@@ -84,5 +102,8 @@ class NetworkManager{
             }
         }).resume()
     }
+    
+    
+    
     
 }

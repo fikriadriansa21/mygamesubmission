@@ -12,7 +12,8 @@ class NetworkManager{
     static let baseURL = "https://api.rawg.io/api"
     static let listGame = "/games?page_size="
     static let listGenre = "/genres?page_size="
-    let detailGame = "/games/"
+    static let detailGame = "/games/"
+    static let screenshot = "/screenshots"
     
     
     static func getListGenre(page_size: String, completion: @escaping([Genres]?) -> Void){
@@ -23,7 +24,7 @@ class NetworkManager{
                     let responseGenre = try decoder.decode(ResponseGenre.self, from: data)
                     completion(responseGenre.results)
                 } catch  {
-                    print("Error decode: \(error.localizedDescription)")
+                    print("Decode proccess error:  \(error.localizedDescription)")
                 }
                 
             }else{
@@ -39,13 +40,47 @@ class NetworkManager{
                     let decoder = JSONDecoder()
                     let responseGame = try decoder.decode(ResponseGame.self, from: data)
                     completion(responseGame.results)
-                    print(responseGame.results)
+                } catch  {
+                    print("Decode proccess error: \(error.localizedDescription)")
+                }
+                
+            }else{
+                print("Error : \(String(describing: error))")
+            }
+        }).resume()
+    }
+    
+    
+    static func getDetailGames(id: Int, completion: @escaping(GameDetail?, Error?) -> Void){
+        URLSession.shared.dataTask(with: URL(string: "\(baseURL)\(detailGame)\(id)")!, completionHandler: {(data,response,error)  in
+            if let data = data{
+                do {
+                    let decoder = JSONDecoder()
+                    let responseGame = try decoder.decode(GameDetail.self, from: data)
+                    completion(responseGame,nil)
                 } catch  {
                     print("Error decode: \(error.localizedDescription)")
                 }
                 
             }else{
-                print("Error : \(String(describing: error))")
+                completion(nil, error)
+            }
+        }).resume()
+    }
+    
+    static func getScreenshotData(id: Int, completion: @escaping([Screenshot]?, Error?) -> Void){
+        URLSession.shared.dataTask(with: URL(string: "\(baseURL)\(detailGame)\(id)\(screenshot)")!, completionHandler: {(data,response,error)  in
+            if let data = data{
+                do {
+                    let decoder = JSONDecoder()
+                    let responseData = try decoder.decode(ScreenshotResponse.self, from: data)
+                    completion(responseData.results,nil)
+                } catch  {
+                    print("Error decode: \(error.localizedDescription)")
+                }
+                
+            }else{
+                completion(nil, error)
             }
         }).resume()
     }

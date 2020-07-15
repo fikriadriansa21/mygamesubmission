@@ -35,7 +35,7 @@ struct Games: Codable {
     let released: String?
     let image: URL?
     let metacritic: Int?
-    let platforms: [Platforms]?
+    let platforms: [Platforms]
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -93,8 +93,8 @@ struct Platforms: Codable{
 
 
 struct Platform : Codable{
-    let id: Int?
-    let name: String?
+    let id: Int
+    let name: String
     
     enum CodingKeys: String, CodingKey {
         case id = "id"

@@ -10,14 +10,25 @@ import UIKit
 
 class GameCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var collectionViewGame: UIView!
     @IBOutlet weak var labelMeta: UILabel!
     @IBOutlet weak var labelPlatform: UILabel!
     @IBOutlet weak var labelReleased: UILabel!
     @IBOutlet weak var labelGameTitle: UILabel!
     @IBOutlet weak var imageGame: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        setupShapeCard()
+    }
+    
+    private func setupShapeCard(){
+        collectionViewGame.layer.cornerRadius = 20.0
+        collectionViewGame.layer.shadowColor = UIColor.gray.cgColor
+        collectionViewGame.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        collectionViewGame.layer.shadowRadius = 12.0
+        collectionViewGame.layer.shadowOpacity = 0.7
     }
     
     static func registerGameCell()->UINib{

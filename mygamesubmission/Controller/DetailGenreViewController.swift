@@ -1,19 +1,28 @@
 //
-//  DetailGameViewController.swift
+//  DetailGenreViewController.swift
 //  mygamesubmission
 //
-//  Created by Fikri Adriansa Yudha on 11/07/20.
+//  Created by Fikri Adriansa Yudha on 14/07/20.
 //  Copyright © 2020 Fikri Adriansa Yudha. All rights reserved.
 //
 
 import UIKit
 
-class DetailGameViewController: UIViewController {
+class DetailGenreViewController: UIViewController {
+    
+    var genreSelected: Genres?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
-        // Do any additional setup after loading the view.
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+//        self.tabBarController?.tabBar.isHidden = true
+//        self.hidesBottomBarWhenPushed = true
     }
 
 

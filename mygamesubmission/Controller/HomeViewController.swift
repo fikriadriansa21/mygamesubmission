@@ -18,6 +18,7 @@ class HomeViewController: UIViewController {
              }
          }
     }
+    var platformName = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,19 +48,17 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cellGames = collectionView.dequeueReusableCell(withReuseIdentifier: "GameCell", for: indexPath) as! GameCollectionViewCell
             
-            var platformName = ""
-            
             let gameList = games[indexPath.row]
             setImage(from: gameList.image!, forCell: cellGames)
             cellGames.labelGameTitle.text = gameList.name
             cellGames.labelReleased.text = gameList.released
             
-            let totalPlatforms = gameList.platforms.count
+            let countedPlatforms = gameList.platforms.count
             
-            for numbers in 0...totalPlatforms-1 {
+            for numbers in 0...countedPlatforms-1 {
                 let platforms = gameList.platforms[numbers]
                 
-                if numbers == totalPlatforms-1 {
+                if numbers == countedPlatforms-1 {
                     platformName += String("\(platforms.platform.name)")
                 }else{
                     platformName += String("\(platforms.platform.name), ")

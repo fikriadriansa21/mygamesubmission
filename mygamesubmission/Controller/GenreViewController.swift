@@ -37,7 +37,6 @@ class GenreViewController: UIViewController {
                    self.genres = genres
                }
            })
-           self.genreCollectionView.reloadData()
        }
 
 

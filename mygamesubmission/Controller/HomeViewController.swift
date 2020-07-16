@@ -9,8 +9,6 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
-    @IBOutlet weak var viewGameCollection: UICollectionView!
     @IBOutlet weak var gameCollectionView: UICollectionView!
     
     var games = [Games](){
@@ -21,8 +19,6 @@ class HomeViewController: UIViewController {
          }
     }
     
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,11 +27,10 @@ class HomeViewController: UIViewController {
         gameCollectionView.register(GameCollectionViewCell.registerGameCell(), forCellWithReuseIdentifier: "GameCell")
         
         loadData()
-        
     }
     
     @objc private func loadData(){
-        NetworkManager.getListGame(page_size: "20", completion: {(games) in
+        NetworkManager.getListGame(completion: {(games) in
             if let games = games{
                 self.games = games
             }
@@ -52,7 +47,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cellGames = collectionView.dequeueReusableCell(withReuseIdentifier: "GameCell", for: indexPath) as! GameCollectionViewCell
             
-            var namePlatform = ""
+            var platformName = ""
             
             let gameList = games[indexPath.row]
             setImage(from: gameList.image!, forCell: cellGames)
@@ -65,15 +60,17 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 let platforms = gameList.platforms[numbers]
                 
                 if numbers == totalPlatforms-1 {
-                    namePlatform += String("\(platforms.platform.name)")
+                    platformName += String("\(platforms.platform.name)")
                 }else{
-                    namePlatform += String("\(platforms.platform.name), ")
+                    platformName += String("\(platforms.platform.name), ")
                 }
             }
             
-            cellGames.labelPlatform.text = namePlatform
+            cellGames.labelPlatform.text = platformName
             let stringMeta = String(gameList.metacritic!)
             cellGames.labelMeta.text = stringMeta
+        
+            Utils.setupShapeCard(view: cellGames)
             
             return cellGames
     }

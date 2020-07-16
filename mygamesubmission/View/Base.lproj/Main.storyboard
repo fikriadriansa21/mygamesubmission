@@ -21,11 +21,11 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categorized Game by Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojX-58-oYf">
                                         <rect key="frame" x="16" y="8" width="343" height="16"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.2470588235" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="ojX-58-oYf" firstAttribute="leading" secondItem="OR4-Rh-GWW" secondAttribute="leading" constant="16" id="EDl-1n-uyw"/>
                                     <constraint firstItem="ojX-58-oYf" firstAttribute="top" secondItem="OR4-Rh-GWW" secondAttribute="top" constant="8" id="Ige-Wa-Zag"/>
@@ -38,9 +38,9 @@
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W1N-Lk-fS8">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="446"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.2470588235" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZHt-CL-M33">
-                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="itemSize" width="343" height="148"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -61,7 +61,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.2470588235" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Sek-zh-tgj" firstAttribute="top" secondItem="OR4-Rh-GWW" secondAttribute="bottom" constant="20" id="3ju-xI-06E"/>
                             <constraint firstItem="Sek-zh-tgj" firstAttribute="bottom" secondItem="Hhf-tF-Xg9" secondAttribute="bottom" id="Hui-TE-0Xw"/>
@@ -96,11 +96,11 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exciting Games For You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edi-8k-2A3">
                                         <rect key="frame" x="16" y="8" width="343" height="16"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.24705882352941178" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="JTg-Fl-Hb2"/>
                                     <constraint firstAttribute="trailing" secondItem="edi-8k-2A3" secondAttribute="trailing" constant="16" id="VPl-jo-ock"/>
@@ -114,7 +114,7 @@
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xiZ-AQ-Xgz">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="462"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.24705882352941178" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uPJ-ux-hjQ">
                                             <size key="itemSize" width="128" height="128"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -128,7 +128,7 @@
                                         </connections>
                                     </collectionView>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.1803921568627451" green="0.14509803921568626" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="xiZ-AQ-Xgz" secondAttribute="bottom" id="Vfv-20-ED9"/>
                                     <constraint firstItem="xiZ-AQ-Xgz" firstAttribute="leading" secondItem="a3z-0F-v0Z" secondAttribute="leading" id="ZCU-bu-61l"/>
@@ -137,7 +137,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.2470588235" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="a3z-0F-v0Z" firstAttribute="top" secondItem="RTl-Om-372" secondAttribute="bottom" constant="16" id="4He-Nc-Iy3"/>
                             <constraint firstItem="RTl-Om-372" firstAttribute="trailing" secondItem="e7g-sc-r8M" secondAttribute="trailing" id="8u4-xU-E87"/>
@@ -180,7 +180,7 @@
         <!--Profile-->
         <scene sceneID="fcD-Zg-8JH">
             <objects>
-                <viewController id="g4k-bJ-1yz" sceneMemberID="viewController">
+                <viewController id="g4k-bJ-1yz" customClass="ProfileViewController" customModule="mygamesubmission" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WoD-bu-DcF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -188,27 +188,40 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbe-HM-Sr1">
                                 <rect key="frame" x="0.0" y="96" width="375" height="178"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dy4-Xc-8xF">
-                                        <rect key="frame" x="143" y="71" width="88" height="88"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myphoto" translatesAutoresizingMaskIntoConstraints="NO" id="dy4-Xc-8xF">
+                                        <rect key="frame" x="131.5" y="50" width="112" height="112"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="112" id="gJj-qS-3Gt"/>
+                                            <constraint firstAttribute="height" constant="112" id="xyk-6Y-5aK"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.2470588235" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dy4-Xc-8xF" firstAttribute="centerX" secondItem="fbe-HM-Sr1" secondAttribute="centerX" id="bWx-Oc-f4Q"/>
+                                    <constraint firstItem="dy4-Xc-8xF" firstAttribute="top" secondItem="fbe-HM-Sr1" secondAttribute="top" constant="50" id="nV0-Oh-WAV"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fikri Adriansa Yudha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRI-M7-KJA">
-                                <rect key="frame" x="93.5" y="290" width="188" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="91" y="290" width="193" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="RaB-Nx-NHC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="adriansafikri@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJ1-PF-ElD">
                                 <rect key="frame" x="98.5" y="326" width="178" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="egz-ju-vn6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.98431372549999996" green="0.85098039219999999" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.2470588235" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="fbe-HM-Sr1" firstAttribute="top" secondItem="Kyc-06-r5l" secondAttribute="top" id="Eyz-ek-Q38"/>
                             <constraint firstItem="QJ1-PF-ElD" firstAttribute="top" secondItem="qRI-M7-KJA" secondAttribute="bottom" constant="12" id="Fhz-LM-h1E"/>
@@ -222,6 +235,11 @@
                         <viewLayoutGuide key="safeArea" id="Kyc-06-r5l"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="jJf-pd-0M0"/>
+                    <connections>
+                        <outlet property="imageProfile" destination="dy4-Xc-8xF" id="VTb-Tg-0TC"/>
+                        <outlet property="labelEmail" destination="QJ1-PF-ElD" id="856-XL-DSx"/>
+                        <outlet property="labelName" destination="qRI-M7-KJA" id="FGY-Vn-qWY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfy-b6-tD8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -236,6 +254,14 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="5fk-A1-Dph">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -255,6 +281,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="NBV-e3-BbH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -274,6 +303,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="1YV-DC-SJs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -287,7 +319,7 @@
     </scenes>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="myphoto" width="640" height="640"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
     </resources>

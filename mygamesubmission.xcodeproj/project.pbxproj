@@ -19,6 +19,7 @@
 		A70A3B0224BF0A3500671573 /* ScreenshotCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A70A3B0024BF0A3500671573 /* ScreenshotCollectionViewCell.xib */; };
 		A70A3B0424BF0C7C00671573 /* Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70A3B0324BF0C7C00671573 /* Screenshot.swift */; };
 		A73055C724BD4B6C00341D38 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73055C624BD4B6C00341D38 /* Utils.swift */; };
+		A73B6ACE24C0A93900CF2039 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B6ACD24C0A93900CF2039 /* ProfileViewController.swift */; };
 		A7B29A0824B9A6260064E493 /* DetailGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B29A0624B9A6260064E493 /* DetailGameViewController.swift */; };
 		A7B29A0924B9A6260064E493 /* DetailGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B29A0724B9A6260064E493 /* DetailGameViewController.xib */; };
 		A7B29A0B24B9A6370064E493 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B29A0A24B9A6370064E493 /* HomeViewController.swift */; };
@@ -47,6 +48,7 @@
 		A70A3B0024BF0A3500671573 /* ScreenshotCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenshotCollectionViewCell.xib; sourceTree = "<group>"; };
 		A70A3B0324BF0C7C00671573 /* Screenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screenshot.swift; sourceTree = "<group>"; };
 		A73055C624BD4B6C00341D38 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A73B6ACD24C0A93900CF2039 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A7B29A0624B9A6260064E493 /* DetailGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameViewController.swift; sourceTree = "<group>"; };
 		A7B29A0724B9A6260064E493 /* DetailGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailGameViewController.xib; sourceTree = "<group>"; };
 		A7B29A0A24B9A6370064E493 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				A7B29A0A24B9A6370064E493 /* HomeViewController.swift */,
 				A7EE07C524BCA78200C3D99F /* GenreViewController.swift */,
 				A7B29A0624B9A6260064E493 /* DetailGameViewController.swift */,
+				A73B6ACD24C0A93900CF2039 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				A704135124B61AA100C26E56 /* AppDelegate.swift in Sources */,
 				A70A3B0424BF0C7C00671573 /* Screenshot.swift in Sources */,
 				A70A3B0124BF0A3500671573 /* ScreenshotCollectionViewCell.swift in Sources */,
+				A73B6ACE24C0A93900CF2039 /* ProfileViewController.swift in Sources */,
 				A70A3AEE24BDF04700671573 /* GameDetail.swift in Sources */,
 				A704135324B61AA100C26E56 /* SceneDelegate.swift in Sources */,
 				A7B29A1F24BAED1D0064E493 /* GameCollectionViewCell.swift in Sources */,

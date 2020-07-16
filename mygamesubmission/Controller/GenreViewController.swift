@@ -32,7 +32,7 @@ class GenreViewController: UIViewController {
     }
     
     @objc private func loadData(){
-           NetworkManager.getListGenre(page_size: "10", completion: {(genres) in
+           NetworkManager.getListGenre(completion: {(genres) in
                if let genres = genres{
                    self.genres = genres
                }
@@ -56,6 +56,8 @@ extension GenreViewController: UICollectionViewDelegate, UICollectionViewDataSou
         setImage(from: genreList.image!, forCell: cellGenre)
         cellGenre.labelGenreTitle.text = genreList.name
         
+        Utils.setupShapeCard(view: cellGenre)
+        
         return cellGenre
     }
     
@@ -70,7 +72,7 @@ extension GenreViewController: UICollectionViewDelegate, UICollectionViewDataSou
 }
 
 extension GenreViewController{
-    func setImage(from url: URL, forCell cell: GenreCollectionViewCell) {
+    private func setImage(from url: URL, forCell cell: GenreCollectionViewCell) {
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             if let data = data {
                 let image = UIImage(data: data)

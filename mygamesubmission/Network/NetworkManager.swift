@@ -12,13 +12,13 @@ class NetworkManager{
     static let baseURL = "https://api.rawg.io/api"
     static let listGame = "/games?page_size="
     static let listGenre = "/genres?page_size="
-    static let detailGame = "/games/"
+    static let game = "/games/"
     static let screenshot = "/screenshots"
-    static let detailGenre = "/genres/"
+    static let genre = "/genres/"
     
     
-    static func getListGenre(page_size: String, completion: @escaping([Genres]?) -> Void){
-        URLSession.shared.dataTask(with: URL(string: "\(baseURL)\(listGenre)\(page_size)")!, completionHandler: {(data,response,error)  in
+    static func getListGenre(completion: @escaping([Genres]?) -> Void){
+        URLSession.shared.dataTask(with: URL(string: "\(baseURL)\(listGenre)")!, completionHandler: {(data,response,error)  in
             if let data = data{
                 do {
                     let decoder = JSONDecoder()
@@ -35,7 +35,7 @@ class NetworkManager{
     }
     
     static func getGenreDetail(id: Int, completion: @escaping(GenreDetail?) -> Void){
-        URLSession.shared.dataTask(with: URL(string: "\(baseURL)\(detailGenre)\(id)")!, completionHandler: {(data,response,error)  in
+        URLSession.shared.dataTask(with: URL(string: "\(baseURL)\(genre)\(id)")!, completionHandler: {(data,response,error)  in
             if let data = data{
                 do {
                     let decoder = JSONDecoder()
@@ -51,8 +51,8 @@ class NetworkManager{
         }).resume()
     }
     
-    static func getListGame(page_size: String, completion: @escaping([Games]?) -> Void){
-        URLSession.shared.dataTask(with: URL(string: "\(baseURL)\(listGame)\(page_size)")!, completionHandler: {(data,response,error)  in
+    static func getListGame(completion: @escaping([Games]?) -> Void){
+        URLSession.shared.dataTask(with: URL(string: "\(baseURL)\(listGame)")!, completionHandler: {(data,response,error)  in
             if let data = data{
                 do {
                     let decoder = JSONDecoder()
@@ -70,7 +70,7 @@ class NetworkManager{
     
     
     static func getDetailGames(id: Int, completion: @escaping(GameDetail?, Error?) -> Void){
-        URLSession.shared.dataTask(with: URL(string: "\(baseURL)\(detailGame)\(id)")!, completionHandler: {(data,response,error)  in
+        URLSession.shared.dataTask(with: URL(string: "\(baseURL)\(game)\(id)")!, completionHandler: {(data,response,error)  in
             if let data = data{
                 do {
                     let decoder = JSONDecoder()
@@ -87,7 +87,7 @@ class NetworkManager{
     }
     
     static func getScreenshotData(id: Int, completion: @escaping([Screenshot]?, Error?) -> Void){
-        URLSession.shared.dataTask(with: URL(string: "\(baseURL)\(detailGame)\(id)\(screenshot)")!, completionHandler: {(data,response,error)  in
+        URLSession.shared.dataTask(with: URL(string: "\(baseURL)\(game)\(id)\(screenshot)")!, completionHandler: {(data,response,error)  in
             if let data = data{
                 do {
                     let decoder = JSONDecoder()

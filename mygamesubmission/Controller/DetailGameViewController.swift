@@ -10,6 +10,7 @@ import UIKit
 
 class DetailGameViewController: UIViewController {
     
+    @IBOutlet weak var containerMetacritic: UIView!
     @IBOutlet weak var labelDescription: UILabel!
     @IBOutlet weak var labelPlatforms: UILabel!
     @IBOutlet weak var labelGenre: UILabel!
@@ -82,6 +83,7 @@ class DetailGameViewController: UIViewController {
                     self.labelPlatforms.text = namePlatform
                     self.labelGenre.text = genres.joined(separator: ", ")
                     self.setImageBackground(from: gameDetail.image!)
+                    Utils.setupShapeCard(view: self.containerMetacritic)
                 }
             }else{
                 print(error!)
@@ -102,6 +104,7 @@ extension DetailGameViewController: UICollectionViewDelegate, UICollectionViewDa
         let screenshotList = screenshotData[indexPath.row]
         setImageScreenshot(from: screenshotList.image!, forCell: cellScreenshot)
         
+        Utils.setupShapeCard(view: cellScreenshot)
         return cellScreenshot
     }
     

@@ -19,16 +19,16 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ta-sQ-0Te">
                         <rect key="frame" x="0.0" y="0.0" width="221" height="128"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KD0-wD-mgX">
-                                <rect key="frame" x="0.0" y="0.0" width="221" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KD0-wD-mgX">
+                                <rect key="frame" x="8" y="8" width="205" height="112"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.23529411759999999" green="0.2901960784" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="KD0-wD-mgX" secondAttribute="bottom" id="7Y1-KL-zu1"/>
-                            <constraint firstItem="KD0-wD-mgX" firstAttribute="leading" secondItem="6ta-sQ-0Te" secondAttribute="leading" id="OKg-5Q-btp"/>
-                            <constraint firstItem="KD0-wD-mgX" firstAttribute="top" secondItem="6ta-sQ-0Te" secondAttribute="top" id="jSM-n9-Gk9"/>
-                            <constraint firstAttribute="trailing" secondItem="KD0-wD-mgX" secondAttribute="trailing" id="nRH-Gh-6YJ"/>
+                            <constraint firstAttribute="bottom" secondItem="KD0-wD-mgX" secondAttribute="bottom" constant="8" id="7Y1-KL-zu1"/>
+                            <constraint firstItem="KD0-wD-mgX" firstAttribute="leading" secondItem="6ta-sQ-0Te" secondAttribute="leading" constant="8" id="OKg-5Q-btp"/>
+                            <constraint firstItem="KD0-wD-mgX" firstAttribute="top" secondItem="6ta-sQ-0Te" secondAttribute="top" constant="8" id="jSM-n9-Gk9"/>
+                            <constraint firstAttribute="trailing" secondItem="KD0-wD-mgX" secondAttribute="trailing" constant="8" id="nRH-Gh-6YJ"/>
                         </constraints>
                     </view>
                 </subviews>

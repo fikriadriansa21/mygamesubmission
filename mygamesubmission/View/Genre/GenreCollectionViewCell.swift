@@ -15,6 +15,8 @@ class GenreCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        
     }
     
     static func registerGenreCollectionCell()->UINib{

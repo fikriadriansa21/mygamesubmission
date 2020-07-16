@@ -19,16 +19,6 @@ class GameCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        setupShapeCard()
-    }
-    
-    private func setupShapeCard(){
-        collectionViewGame.layer.cornerRadius = 20.0
-        collectionViewGame.layer.shadowColor = UIColor.gray.cgColor
-        collectionViewGame.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-        collectionViewGame.layer.shadowRadius = 12.0
-        collectionViewGame.layer.shadowOpacity = 0.7
     }
     
     static func registerGameCell()->UINib{

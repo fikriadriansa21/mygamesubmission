@@ -14,6 +14,7 @@ class ScreenshotCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        Utils.setupShapeCard(view: imageScreenshot)
     }
 
     static func registerScreenshotCell()->UINib{

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FXd-iF-poa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FXd-iF-poa">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -37,7 +37,7 @@
                                 <rect key="frame" x="0.0" y="172" width="375" height="446"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W1N-Lk-fS8">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="446"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="414"/>
                                         <color key="backgroundColor" red="0.20000000000000001" green="0.2470588235" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZHt-CL-M33">
                                             <size key="itemSize" width="343" height="148"/>
@@ -52,10 +52,10 @@
                                         </connections>
                                     </collectionView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.2470588235" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="W1N-Lk-fS8" secondAttribute="trailing" id="CHg-Te-41c"/>
-                                    <constraint firstAttribute="bottom" secondItem="W1N-Lk-fS8" secondAttribute="bottom" id="a11-d4-ik4"/>
+                                    <constraint firstAttribute="bottom" secondItem="W1N-Lk-fS8" secondAttribute="bottom" constant="32" id="a11-d4-ik4"/>
                                     <constraint firstItem="W1N-Lk-fS8" firstAttribute="leading" secondItem="Sek-zh-tgj" secondAttribute="leading" id="ey7-dy-EEG"/>
                                     <constraint firstItem="W1N-Lk-fS8" firstAttribute="top" secondItem="Sek-zh-tgj" secondAttribute="top" id="w1Q-Kx-rP4"/>
                                 </constraints>
@@ -113,7 +113,7 @@
                                 <rect key="frame" x="0.0" y="156" width="375" height="462"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xiZ-AQ-Xgz">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="462"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="430"/>
                                         <color key="backgroundColor" red="0.20000000000000001" green="0.24705882352941178" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uPJ-ux-hjQ">
                                             <size key="itemSize" width="128" height="128"/>
@@ -128,9 +128,9 @@
                                         </connections>
                                     </collectionView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.1803921568627451" green="0.14509803921568626" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.2470588235" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="xiZ-AQ-Xgz" secondAttribute="bottom" id="Vfv-20-ED9"/>
+                                    <constraint firstAttribute="bottom" secondItem="xiZ-AQ-Xgz" secondAttribute="bottom" constant="32" id="Vfv-20-ED9"/>
                                     <constraint firstItem="xiZ-AQ-Xgz" firstAttribute="leading" secondItem="a3z-0F-v0Z" secondAttribute="leading" id="ZCU-bu-61l"/>
                                     <constraint firstAttribute="trailing" secondItem="xiZ-AQ-Xgz" secondAttribute="trailing" id="rd4-Ct-x26"/>
                                     <constraint firstItem="xiZ-AQ-Xgz" firstAttribute="top" secondItem="a3z-0F-v0Z" secondAttribute="top" id="wiO-pw-OD4"/>
@@ -156,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pBx-vq-CYJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2042" y="1489"/>
+            <point key="canvasLocation" x="-2042.4000000000001" y="1488.305847076462"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yuJ-ag-ugS">

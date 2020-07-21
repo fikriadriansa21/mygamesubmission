@@ -25,7 +25,7 @@ class HomeViewController: UIViewController {
         
         gameCollectionView.delegate = self
         gameCollectionView.dataSource = self
-        gameCollectionView.register(GameCollectionViewCell.registerGameCell(), forCellWithReuseIdentifier: "GameCell")
+        gameCollectionView.register(MainGameCollectionViewCell.registerMainGameCell(), forCellWithReuseIdentifier: "MainGameCardCell")
         
         loadData()
     }
@@ -46,12 +46,12 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            let cellGames = collectionView.dequeueReusableCell(withReuseIdentifier: "GameCell", for: indexPath) as! GameCollectionViewCell
+            let cellGames = collectionView.dequeueReusableCell(withReuseIdentifier: "MainGameCardCell", for: indexPath) as! MainGameCollectionViewCell
             
             let gameList = games[indexPath.row]
             setImage(from: gameList.image!, forCell: cellGames)
-            cellGames.labelGameTitle.text = gameList.name
-            cellGames.labelReleased.text = gameList.released
+            cellGames.labelTitleGame.text = gameList.name
+            cellGames.labelReleasedGame.text = gameList.released
             
             let countedPlatforms = gameList.platforms.count
             
@@ -65,9 +65,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
                 }
             }
             
-            cellGames.labelPlatform.text = platformName
+            cellGames.labelPlatformGame.text = platformName
             let stringMeta = String(gameList.metacritic!)
-            cellGames.labelMeta.text = stringMeta
+            cellGames.labelMetaGame.text = stringMeta
         
             Utils.setupShapeCard(view: cellGames)
             
@@ -87,12 +87,12 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
 
 extension HomeViewController{
-    func setImage(from url: URL, forCell cell: GameCollectionViewCell) {
+    func setImage(from url: URL, forCell cell: MainGameCollectionViewCell) {
         URLSession.shared.dataTask(with: url) { (data, _, _) in
             if let data = data {
                 let image = UIImage(data: data)
                 DispatchQueue.main.async {
-                    cell.imageGame.image = image
+                    cell.imagePosterGame.image = image
                 }
             }
         }.resume()

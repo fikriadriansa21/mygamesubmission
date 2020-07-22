@@ -21,11 +21,11 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categorized Game by Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojX-58-oYf">
                                         <rect key="frame" x="16" y="8" width="343" height="16"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.30588235294117649" green="0.50980392156862742" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.2470588235" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="ojX-58-oYf" firstAttribute="leading" secondItem="OR4-Rh-GWW" secondAttribute="leading" constant="16" id="EDl-1n-uyw"/>
                                     <constraint firstItem="ojX-58-oYf" firstAttribute="top" secondItem="OR4-Rh-GWW" secondAttribute="top" constant="8" id="Ige-Wa-Zag"/>
@@ -38,7 +38,7 @@
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W1N-Lk-fS8">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="414"/>
-                                        <color key="backgroundColor" red="0.20000000000000001" green="0.2470588235" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZHt-CL-M33">
                                             <size key="itemSize" width="343" height="148"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -52,7 +52,7 @@
                                         </connections>
                                     </collectionView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.2470588235" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="W1N-Lk-fS8" secondAttribute="trailing" id="CHg-Te-41c"/>
                                     <constraint firstAttribute="bottom" secondItem="W1N-Lk-fS8" secondAttribute="bottom" constant="32" id="a11-d4-ik4"/>
@@ -61,7 +61,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.20000000000000001" green="0.2470588235" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Sek-zh-tgj" firstAttribute="top" secondItem="OR4-Rh-GWW" secondAttribute="bottom" constant="20" id="3ju-xI-06E"/>
                             <constraint firstItem="Sek-zh-tgj" firstAttribute="bottom" secondItem="Hhf-tF-Xg9" secondAttribute="bottom" id="Hui-TE-0Xw"/>
@@ -90,32 +90,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTl-Om-372">
-                                <rect key="frame" x="0.0" y="108" width="375" height="32"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exciting Games For You" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edi-8k-2A3">
-                                        <rect key="frame" x="16" y="8" width="343" height="16"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.24705882352941178" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="JTg-Fl-Hb2"/>
-                                    <constraint firstAttribute="trailing" secondItem="edi-8k-2A3" secondAttribute="trailing" constant="16" id="VPl-jo-ock"/>
-                                    <constraint firstItem="edi-8k-2A3" firstAttribute="leading" secondItem="RTl-Om-372" secondAttribute="leading" constant="16" id="qad-mI-Zcb"/>
-                                    <constraint firstAttribute="bottom" secondItem="edi-8k-2A3" secondAttribute="bottom" constant="8" id="tMI-9r-MgD"/>
-                                    <constraint firstItem="edi-8k-2A3" firstAttribute="top" secondItem="RTl-Om-372" secondAttribute="top" constant="8" id="xn7-ET-mNG"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a3z-0F-v0Z" userLabel="Game Collection View Container">
-                                <rect key="frame" x="0.0" y="156" width="375" height="462"/>
+                                <rect key="frame" x="0.0" y="216" width="375" height="418"/>
                                 <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xiZ-AQ-Xgz">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="430"/>
-                                        <color key="backgroundColor" red="0.20000000000000001" green="0.24705882352941178" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uPJ-ux-hjQ">
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xiZ-AQ-Xgz">
+                                        <rect key="frame" x="0.0" y="2" width="375" height="430"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="16" minimumInteritemSpacing="16" id="uPJ-ux-hjQ">
                                             <size key="itemSize" width="128" height="128"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -128,24 +110,25 @@
                                         </connections>
                                     </collectionView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.2470588235" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="xiZ-AQ-Xgz" secondAttribute="bottom" constant="32" id="Vfv-20-ED9"/>
-                                    <constraint firstItem="xiZ-AQ-Xgz" firstAttribute="leading" secondItem="a3z-0F-v0Z" secondAttribute="leading" id="ZCU-bu-61l"/>
-                                    <constraint firstAttribute="trailing" secondItem="xiZ-AQ-Xgz" secondAttribute="trailing" id="rd4-Ct-x26"/>
-                                    <constraint firstItem="xiZ-AQ-Xgz" firstAttribute="top" secondItem="a3z-0F-v0Z" secondAttribute="top" id="wiO-pw-OD4"/>
-                                </constraints>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Find More Games" translatesAutoresizingMaskIntoConstraints="NO" id="8ed-i8-0bt">
+                                <rect key="frame" x="0.0" y="120" width="375" height="56"/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
-                        <color key="backgroundColor" red="0.20000000000000001" green="0.2470588235" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="a3z-0F-v0Z" firstAttribute="top" secondItem="RTl-Om-372" secondAttribute="bottom" constant="16" id="4He-Nc-Iy3"/>
-                            <constraint firstItem="RTl-Om-372" firstAttribute="trailing" secondItem="e7g-sc-r8M" secondAttribute="trailing" id="8u4-xU-E87"/>
-                            <constraint firstItem="RTl-Om-372" firstAttribute="leading" secondItem="e7g-sc-r8M" secondAttribute="leading" id="Aw6-J9-gMP"/>
-                            <constraint firstItem="a3z-0F-v0Z" firstAttribute="trailing" secondItem="e7g-sc-r8M" secondAttribute="trailing" id="deM-b7-JWd"/>
-                            <constraint firstItem="a3z-0F-v0Z" firstAttribute="bottom" secondItem="e7g-sc-r8M" secondAttribute="bottom" id="ftv-Zi-CmX"/>
-                            <constraint firstItem="RTl-Om-372" firstAttribute="top" secondItem="e7g-sc-r8M" secondAttribute="top" constant="12" id="k0C-7U-qgP"/>
-                            <constraint firstItem="a3z-0F-v0Z" firstAttribute="leading" secondItem="e7g-sc-r8M" secondAttribute="leading" id="mbJ-xR-jPl"/>
+                            <constraint firstItem="a3z-0F-v0Z" firstAttribute="trailing" secondItem="e7g-sc-r8M" secondAttribute="trailing" id="4ZG-VW-pHv"/>
+                            <constraint firstItem="8ed-i8-0bt" firstAttribute="leading" secondItem="e7g-sc-r8M" secondAttribute="leading" id="C8v-AG-udd"/>
+                            <constraint firstItem="a3z-0F-v0Z" firstAttribute="top" secondItem="8ed-i8-0bt" secondAttribute="bottom" constant="40" id="HQZ-gX-dNW"/>
+                            <constraint firstItem="8ed-i8-0bt" firstAttribute="top" secondItem="e7g-sc-r8M" secondAttribute="top" constant="24" id="MsL-VC-vX5"/>
+                            <constraint firstItem="8ed-i8-0bt" firstAttribute="trailing" secondItem="e7g-sc-r8M" secondAttribute="trailing" id="OHT-7i-dM3"/>
+                            <constraint firstItem="a3z-0F-v0Z" firstAttribute="top" secondItem="8ed-i8-0bt" secondAttribute="bottom" constant="40" id="cGe-Yl-bRz"/>
+                            <constraint firstItem="a3z-0F-v0Z" firstAttribute="leading" secondItem="e7g-sc-r8M" secondAttribute="leading" id="d00-DD-J0U"/>
+                            <constraint firstItem="a3z-0F-v0Z" firstAttribute="bottom" secondItem="e7g-sc-r8M" secondAttribute="bottom" constant="16" id="ir0-uM-TMx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="e7g-sc-r8M"/>
                     </view>
@@ -196,7 +179,7 @@
                                         </constraints>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.20000000000000001" green="0.2470588235" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.8784313725490196" green="0.87450980392156863" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="dy4-Xc-8xF" firstAttribute="centerX" secondItem="fbe-HM-Sr1" secondAttribute="centerX" id="bWx-Oc-f4Q"/>
                                     <constraint firstItem="dy4-Xc-8xF" firstAttribute="top" secondItem="fbe-HM-Sr1" secondAttribute="top" constant="50" id="nV0-Oh-WAV"/>
@@ -208,7 +191,7 @@
                                     <constraint firstAttribute="height" constant="24" id="RaB-Nx-NHC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.074509803920000006" green="0.078431372550000003" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="adriansafikri@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJ1-PF-ElD">
@@ -217,11 +200,11 @@
                                     <constraint firstAttribute="height" constant="20" id="egz-ju-vn6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" red="0.98431372549999996" green="0.85098039219999999" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.074509803920000006" green="0.078431372550000003" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.20000000000000001" green="0.2470588235" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.8784313725490196" green="0.87450980392156863" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="fbe-HM-Sr1" firstAttribute="top" secondItem="Kyc-06-r5l" secondAttribute="top" id="Eyz-ek-Q38"/>
                             <constraint firstItem="QJ1-PF-ElD" firstAttribute="top" secondItem="qRI-M7-KJA" secondAttribute="bottom" constant="12" id="Fhz-LM-h1E"/>
@@ -234,7 +217,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kyc-06-r5l"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Profile" id="jJf-pd-0M0"/>
+                    <navigationItem key="navigationItem" title="Profile" id="jJf-pd-0M0">
+                        <barButtonItem key="rightBarButtonItem" image="square.and.pencil" catalog="system" id="hCo-UU-8HK"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageProfile" destination="dy4-Xc-8xF" id="VTb-Tg-0TC"/>
                         <outlet property="labelEmail" destination="QJ1-PF-ElD" id="856-XL-DSx"/>
@@ -255,11 +240,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.074509803920000006" green="0.078431372550000003" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.074509803920000006" green="0.078431372550000003" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
@@ -282,7 +267,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.074509803920000006" green="0.078431372550000003" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -304,7 +289,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.074509803921568626" green="0.078431372549019607" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -321,6 +306,7 @@
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="myphoto" width="640" height="640"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="118"/>
         <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
     </resources>
 </document>

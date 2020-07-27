@@ -31,14 +31,6 @@ struct ProfileModel {
     }
     
     
-    static func deteleAll() -> Bool{
-        if let domain = Bundle.main.bundleIdentifier {
-            UserDefaults.standard.removePersistentDomain(forName: domain)
-            UserDefaults.standard.synchronize()
-            return true
-        } else { return false }
-    }
-    
     static func synchronize() {
         UserDefaults.standard.synchronize()
     }

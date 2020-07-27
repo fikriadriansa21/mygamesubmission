@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -34,7 +34,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                         </imageView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.23529411759999999" green="0.2901960784" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="TB0-Ku-E2B" firstAttribute="top" secondItem="bJG-Ry-cjf" secondAttribute="top" id="1vz-om-GpG"/>
                                         <constraint firstAttribute="bottom" secondItem="TB0-Ku-E2B" secondAttribute="bottom" id="BDJ-74-DpX"/>
@@ -54,7 +54,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sY-T0-49z">
                                                     <rect key="frame" x="16" y="16" width="366" height="29"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                    <color key="textColor" red="0.98431372549999996" green="0.85098039219999999" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.074509803920000006" green="0.078431372550000003" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Games:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsc-ZI-Lo6">
@@ -63,17 +63,17 @@
                                                         <constraint firstAttribute="width" constant="94.5" id="7gA-H5-IEn"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.074509803920000006" green="0.078431372550000003" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kL0-Ch-PtW">
                                                     <rect key="frame" x="122.5" y="61" width="259.5" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.30588235289999999" green="0.50980392159999999" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.23529411759999999" green="0.2901960784" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="kL0-Ch-PtW" secondAttribute="bottom" constant="16" id="19m-Tp-Qa4"/>
                                                 <constraint firstItem="vsc-ZI-Lo6" firstAttribute="leading" secondItem="Mq1-gc-27I" secondAttribute="leading" constant="16" id="EAB-q7-woX"/>
@@ -93,17 +93,17 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95N-QO-WyS">
                                                     <rect key="frame" x="16" y="47.5" width="366" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.074509803920000006" green="0.078431372550000003" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYv-X2-VOt">
                                                     <rect key="frame" x="16" y="16" width="366" height="19.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.074509803920000006" green="0.078431372550000003" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.23529411759999999" green="0.2901960784" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="95N-QO-WyS" secondAttribute="trailing" constant="16" id="1My-wm-sZ5"/>
                                                 <constraint firstItem="gYv-X2-VOt" firstAttribute="top" secondItem="svF-v7-Mqy" secondAttribute="top" constant="16" id="56q-V0-89H"/>
@@ -115,7 +115,7 @@
                                             </constraints>
                                         </view>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.23529411759999999" green="0.2901960784" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="svF-v7-Mqy" firstAttribute="top" secondItem="Mq1-gc-27I" secondAttribute="bottom" constant="24" id="1cN-IW-jF4"/>
                                         <constraint firstItem="svF-v7-Mqy" firstAttribute="leading" secondItem="x0T-Xv-4JN" secondAttribute="leading" constant="8" id="Kqc-Sl-lim"/>
@@ -144,7 +144,7 @@
                     <viewLayoutGuide key="frameLayoutGuide" id="QMx-jp-KNg"/>
                 </scrollView>
             </subviews>
-            <color key="backgroundColor" red="0.23529411759999999" green="0.2901960784" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.87843137250000003" green="0.87450980389999999" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstItem="ftE-Gk-Chq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="3bh-yW-Zsv"/>
                 <constraint firstItem="ftE-Gk-Chq" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="5If-Hp-wdg"/>

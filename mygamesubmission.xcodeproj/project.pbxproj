@@ -20,7 +20,9 @@
 		A70A3B0424BF0C7C00671573 /* Screenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70A3B0324BF0C7C00671573 /* Screenshot.swift */; };
 		A73055C724BD4B6C00341D38 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73055C624BD4B6C00341D38 /* Utils.swift */; };
 		A73B6ACE24C0A93900CF2039 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73B6ACD24C0A93900CF2039 /* ProfileViewController.swift */; };
-		A7AD9A2524CE88E90009CE4B /* GameDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7AD9A2324CE88E90009CE4B /* GameDataModel.xcdatamodeld */; };
+		A7AD9A2724CE8E450009CE4B /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD9A2624CE8E450009CE4B /* ProfileModel.swift */; };
+		A7AD9A2924CE95790009CE4B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD9A2824CE95790009CE4B /* RoundButton.swift */; };
+		A7AD9A2B24CEC2AE0009CE4B /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AD9A2A24CEC2AE0009CE4B /* EditProfileViewController.swift */; };
 		A7B29A0824B9A6260064E493 /* DetailGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B29A0624B9A6260064E493 /* DetailGameViewController.swift */; };
 		A7B29A0924B9A6260064E493 /* DetailGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7B29A0724B9A6260064E493 /* DetailGameViewController.xib */; };
 		A7B29A0B24B9A6370064E493 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B29A0A24B9A6370064E493 /* HomeViewController.swift */; };
@@ -52,7 +54,9 @@
 		A70A3B0324BF0C7C00671573 /* Screenshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screenshot.swift; sourceTree = "<group>"; };
 		A73055C624BD4B6C00341D38 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		A73B6ACD24C0A93900CF2039 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		A7AD9A2424CE88E90009CE4B /* GameDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GameDataModel.xcdatamodel; sourceTree = "<group>"; };
+		A7AD9A2624CE8E450009CE4B /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		A7AD9A2824CE95790009CE4B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		A7AD9A2A24CEC2AE0009CE4B /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		A7B29A0624B9A6260064E493 /* DetailGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameViewController.swift; sourceTree = "<group>"; };
 		A7B29A0724B9A6260064E493 /* DetailGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailGameViewController.xib; sourceTree = "<group>"; };
 		A7B29A0A24B9A6370064E493 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 				A704135224B61AA100C26E56 /* SceneDelegate.swift */,
 				A704135E24B61AA300C26E56 /* Info.plist */,
 				A73055C624BD4B6C00341D38 /* Utils.swift */,
+				A7AD9A2824CE95790009CE4B /* RoundButton.swift */,
 			);
 			path = "Support File";
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 				A7EE07C524BCA78200C3D99F /* GenreViewController.swift */,
 				A7B29A0624B9A6260064E493 /* DetailGameViewController.swift */,
 				A73B6ACD24C0A93900CF2039 /* ProfileViewController.swift */,
+				A7AD9A2A24CEC2AE0009CE4B /* EditProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -197,7 +203,7 @@
 				A7B29A2724BB5FAA0064E493 /* Game.swift */,
 				A70A3AED24BDF04700671573 /* GameDetail.swift */,
 				A70A3B0324BF0C7C00671573 /* Screenshot.swift */,
-				A7AD9A2324CE88E90009CE4B /* GameDataModel.xcdatamodeld */,
+				A7AD9A2624CE8E450009CE4B /* ProfileModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -283,10 +289,11 @@
 				A7B29A2824BB5FAA0064E493 /* Game.swift in Sources */,
 				A7B29A0F24BA14FF0064E493 /* GenreCollectionViewCell.swift in Sources */,
 				A704135124B61AA100C26E56 /* AppDelegate.swift in Sources */,
+				A7AD9A2724CE8E450009CE4B /* ProfileModel.swift in Sources */,
 				A7B89DEE24C6FAC200418E4E /* MainGameCollectionViewCell.swift in Sources */,
-				A7AD9A2524CE88E90009CE4B /* GameDataModel.xcdatamodeld in Sources */,
 				A70A3B0424BF0C7C00671573 /* Screenshot.swift in Sources */,
 				A70A3B0124BF0A3500671573 /* ScreenshotCollectionViewCell.swift in Sources */,
+				A7AD9A2B24CEC2AE0009CE4B /* EditProfileViewController.swift in Sources */,
 				A73B6ACE24C0A93900CF2039 /* ProfileViewController.swift in Sources */,
 				A70A3AEE24BDF04700671573 /* GameDetail.swift in Sources */,
 				A704135324B61AA100C26E56 /* SceneDelegate.swift in Sources */,
@@ -294,6 +301,7 @@
 				A7EE07C624BCA78200C3D99F /* GenreViewController.swift in Sources */,
 				A73055C724BD4B6C00341D38 /* Utils.swift in Sources */,
 				A7B29A0B24B9A6370064E493 /* HomeViewController.swift in Sources */,
+				A7AD9A2924CE95790009CE4B /* RoundButton.swift in Sources */,
 				A70A3AF924BE180200671573 /* DetailGenreViewController.swift in Sources */,
 				A7B29A0824B9A6260064E493 /* DetailGameViewController.swift in Sources */,
 				A7B29A2524BB5F540064E493 /* Genre.swift in Sources */,
@@ -494,19 +502,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		A7AD9A2324CE88E90009CE4B /* GameDataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				A7AD9A2424CE88E90009CE4B /* GameDataModel.xcdatamodel */,
-			);
-			currentVersion = A7AD9A2424CE88E90009CE4B /* GameDataModel.xcdatamodel */;
-			path = GameDataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = A704134524B61AA100C26E56 /* Project object */;
 }

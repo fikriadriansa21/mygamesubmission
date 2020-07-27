@@ -18,4 +18,15 @@ class ProfileViewController: UIViewController {
         
         Utils.setupRoundedImage(view: imageProfile)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        ProfileModel.synchronize()
+        labelName.text = ProfileModel.name
+        labelEmail.text = ProfileModel.email
+    }
+    
+    @IBAction func buttonEditProfileClicked(_ sender: Any) {
+        self.performSegue(withIdentifier: "moveToEdit", sender: self)
+    }
+    
 }

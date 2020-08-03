@@ -135,6 +135,7 @@
                     <navigationItem key="navigationItem" title="GameBox" id="Wzz-kU-sH2"/>
                     <connections>
                         <outlet property="gameCollectionView" destination="xiZ-AQ-Xgz" id="geO-ap-zem"/>
+                        <outlet property="searchBarGame" destination="8ed-i8-0bt" id="vCH-OR-Fyf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pBx-vq-CYJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -153,8 +154,8 @@
                     <connections>
                         <segue destination="jy2-My-PdZ" kind="relationship" relationship="viewControllers" id="RbJ-bL-feV"/>
                         <segue destination="flt-Ri-z7S" kind="relationship" relationship="viewControllers" id="zte-gS-z0s"/>
-                        <segue destination="0Bu-1v-lC8" kind="relationship" relationship="viewControllers" id="Qz0-AO-OBo"/>
                         <segue destination="Fjq-yR-7Bh" kind="relationship" relationship="viewControllers" id="G1y-eL-cio"/>
+                        <segue destination="0Bu-1v-lC8" kind="relationship" relationship="viewControllers" id="iVt-ak-zRa"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3hN-Rp-La5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -15,6 +15,7 @@ class NetworkManager{
     static let game = "/games/"
     static let screenshot = "/screenshots"
     static let genre = "/genres/"
+    static let searchByTitle = "/games?search="
     
     
     static func getListGenre(completion: @escaping([Genres]?) -> Void){
@@ -34,6 +35,7 @@ class NetworkManager{
         }).resume()
     }
     
+    
     static func getGenreDetail(id: Int, completion: @escaping(GenreDetail?) -> Void){
         URLSession.shared.dataTask(with: URL(string: "\(baseURL)\(genre)\(id)")!, completionHandler: {(data,response,error)  in
             if let data = data{
@@ -47,6 +49,23 @@ class NetworkManager{
                 
             }else{
                 print("Error : \(String(describing: error))")
+            }
+        }).resume()
+    }
+    
+    static func getDataSearch(title: String,completion: @escaping([Games]?, Error?) -> Void){
+        URLSession.shared.dataTask(with: URL(string: "\(baseURL)\(searchByTitle)\(title)")!, completionHandler: {(data,response,error)  in
+            if let data = data{
+                do {
+                    let decoder = JSONDecoder()
+                    let searchData = try decoder.decode(ResponseGame.self, from: data)
+                    completion(searchData.results, nil)
+                } catch  {
+                    print("Decode proccess error: \(error.localizedDescription)")
+                }
+                
+            }else if let error = error{
+                completion(nil, error)
             }
         }).resume()
     }

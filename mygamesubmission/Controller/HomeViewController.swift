@@ -9,6 +9,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    @IBOutlet weak var searchBarGame: UISearchBar!
     @IBOutlet weak var gameCollectionView: UICollectionView!
     
     var games = [Games](){
@@ -23,6 +24,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        searchBarGame.delegate = self
         gameCollectionView.delegate = self
         gameCollectionView.dataSource = self
         gameCollectionView.register(MainGameCollectionViewCell.registerMainGameCell(), forCellWithReuseIdentifier: "MainGameCardCell")
@@ -96,5 +98,24 @@ extension HomeViewController{
                 }
             }
         }.resume()
+    }
+}
+
+
+extension HomeViewController: UISearchBarDelegate{
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+            searchBarGame.resignFirstResponder()
+            guard let labelSearchGame = searchBar.text else { return }
+            
+            if !labelSearchGame.isEmpty{
+                guard let encodedString = labelSearchGame.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else { return }
+                
+                NetworkManager.getDataSearch(title: encodedString, completion: { (searchData, error) in
+                    guard let searchGameData = searchData else{
+                        return
+                    }
+                    self.games = searchGameData
+                })
+            }
     }
 }

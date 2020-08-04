@@ -9,7 +9,7 @@
 import Foundation
 
 struct ResponseGame: Codable{
-    var results : [Games]
+    var results : [Games]?
     
     enum CodingKeys: String, CodingKey {
         case results = "results"
@@ -32,9 +32,9 @@ struct ResponseGame: Codable{
 struct Games: Codable {
     let id: Int?
     let name: String?
-    let released: String?
-    let image: URL?
-    let metacritic: Int?
+    var released: String?
+    var image: URL?
+    var metacritic: Int?
     let platforms: [Platforms]
     
     enum CodingKeys: String, CodingKey {
@@ -51,9 +51,21 @@ struct Games: Codable {
 
         id = try container.decode(Int.self, forKey: .id)
         name = try container.decode(String.self, forKey: .name)
-        released = try container.decode(String.self, forKey: .released)
-        image = try container.decode(URL.self, forKey: .image)
-        metacritic = try container.decode(Int.self, forKey: .metacritic)
+        do{
+            self.released = try container.decode(String.self, forKey: .released)
+        }catch{
+            self.released = ""
+        }
+        do {
+            image = try container.decode(URL.self, forKey: .image)
+        } catch {
+            image = nil
+        }
+        do{
+            self.metacritic = try container.decode(Int.self, forKey: .metacritic)
+        }catch{
+            self.metacritic = 0
+        }
         platforms = try container.decode([Platforms].self, forKey: .platforms)
     }
 

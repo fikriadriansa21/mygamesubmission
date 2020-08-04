@@ -23,3 +23,7 @@ class Utils{
         view.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
     }
 }
+
+//extension LosslessStringConvertible {
+//    var string: String { .init(self) }
+//}

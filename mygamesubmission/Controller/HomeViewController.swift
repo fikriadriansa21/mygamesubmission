@@ -39,6 +39,14 @@ class HomeViewController: UIViewController {
             }
         })
     }
+    
+//    @objc private func loadData(){
+//        NetworkManager.getDataSearch(title: "Gta", completion: {(games,error) in
+//            if let games = games{
+//                self.games = games
+//            }
+//        })
+//    }
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource{
@@ -51,7 +59,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             let cellGames = collectionView.dequeueReusableCell(withReuseIdentifier: "MainGameCardCell", for: indexPath) as! MainGameCollectionViewCell
             
             let gameList = games[indexPath.row]
-            setImage(from: gameList.image!, forCell: cellGames)
+            setImage(from: gameList, forCell: cellGames)
             cellGames.labelTitleGame.text = gameList.name
             cellGames.labelReleasedGame.text = gameList.released
             
@@ -89,22 +97,38 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
 
 extension HomeViewController{
-    func setImage(from url: URL, forCell cell: MainGameCollectionViewCell) {
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            if let data = data {
-                let image = UIImage(data: data)
-                DispatchQueue.main.async {
-                    cell.imagePosterGame.image = image
+    func setImage(from game: Games, forCell cell: MainGameCollectionViewCell) {
+//        URLSession.shared.dataTask(with: url) { (data, _, _) in
+//            if let data = data {
+//                let image = UIImage(data: data)
+//                DispatchQueue.main.async {
+//                    cell.imagePosterGame.image = image
+//                }
+//            }
+//        }.resume()
+        DispatchQueue.global().async {
+            guard game.image != nil else {
+                DispatchQueue.main.async{
+                    cell.imagePosterGame.image = UIImage(named: "image_not_available.png")
                 }
+                return
             }
-        }.resume()
+            do{
+                let imageData = try Data.init(contentsOf: game.image!)
+                DispatchQueue.main.async {
+                    cell.imagePosterGame.image = UIImage.init(data: imageData)
+                }
+            }catch{
+                print("Memproses gambar bermasalah : \(error)")
+            }
+        }
     }
 }
 
 
 extension HomeViewController: UISearchBarDelegate{
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-            searchBarGame.resignFirstResponder()
+            searchBar.resignFirstResponder()
             guard let labelSearchGame = searchBar.text else { return }
             
             if !labelSearchGame.isEmpty{
